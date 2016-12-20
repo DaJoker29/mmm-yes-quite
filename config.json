@@ -1,0 +1,6 @@
+{
+  "MONGOOSE_URL": "mongodb://localhost/myq",
+  "PROGRAM_TITLE": "Mmm, Yes, Quite",
+  "PROGRAM_DESC": "A good time wrapped in stupidity.",
+  "PROGRAM_COPYRIGHT": "All Rights Reserved."
+}
