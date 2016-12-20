@@ -1,0 +1,38 @@
+{
+  "name": "mmm-yes-quite",
+  "version": "0.0.0",
+  "description": "Open Source web site for the Mmm, Yes, Quite podcast",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js,.json",
+    "fix": "eslint --fix . --ext .js,.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preversion": "git checkout master && git merge --no-ff develop -m 'Pull changes for release bump'",
+    "postversion": "git push && git push --tags && git checkout develop && git merge --no-ff master -m 'Sync Develop branch' && git push",
+    "install": "ln -si ../../tools/pre-commit.sh .git/hooks/pre-commit",
+    "start": "pm2 start process.json",
+    "watch": "nodemon index.js --config nodemon.json",
+    "dist": "./tools/upgrade.sh",
+    "reload": "./tools/reload-server.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaJoker29/mmm-yes-quite.git"
+  },
+  "author": "Dewitt Buckingham (http://zerodaedalus.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaJoker29/mmm-yes-quite/issues"
+  },
+  "homepage": "https://github.com/DaJoker29/mmm-yes-quite#readme",
+  "dependencies": {
+    "debug": "https://registry.npmjs.org/debug/-/debug-2.4.5.tgz",
+    "eslint": "3.12.2",
+    "eslint-config-airbnb": "13.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-json": "1.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "6.8.0",
+    "nodemon": "1.11.0"
+  }
+}
