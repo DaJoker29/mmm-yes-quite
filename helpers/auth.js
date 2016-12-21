@@ -11,57 +11,32 @@ function ensureAuth(req, res, next) {
 
 // Handle OAuth Provider Authentication
 function handleOAuth(req, accessToken, refreshToken, profile, done) {
-  const { provider } = profile;
-
-  const props = {
-    lastUpdated: Date.now(),
-    accessToken,
-  };
-
-  const options = {
-    new: true,
-    upsert: true,
-  };
-
   if (!req.user) {
-    // Not logged in.
     const { displayName, id } = profile;
 
-    const query = {};
-    query[`accounts.${provider}.id`] = id;
-
-    // Find or Create
-    person.findOne(query, (err, doc) => {
-      if (err) { done(err, doc); }
-
-      if (doc) {
+    person.findOne({ googleID: id }, (err, doc) => {
+      // Check for existing doc and return it, if found
+      if (err) {
+        return done(err, doc);
+      } else if (doc) {
         // Update doc and return, if found
-        const update = {
-          lastLogin: Date.now(),
-          accounts: doc.accounts,
+        const options = {
+          new: true,
+          upsert: true,
         };
-        update.accounts[provider] = Object.assign(profile, props);
 
-        person.findByIdAndUpdate(doc.id, update, options, done);
-      } else {
-        // Create new doc, if not found
-        const data = {
-          displayName,
-          accounts: {},
-        };
-        data.accounts[provider] = Object.assign(profile, props);
-
-        person.create(data, done);
+        return person.findByIdAndUpdate(doc.id, { googleToken: accessToken }, options, done);
       }
-    });
-  } else {
-    // Logged in
-    const update = {
-      accounts: req.user.accounts,
-    };
-    update.accounts[provider] = Object.assign(profile, props);
 
-    person.findByIdAndUpdate(req.user.id, update, options, done);
+      // Create new doc, if not found
+      const data = {
+        displayName,
+        googleID: id,
+        googleToken: accessToken,
+      };
+
+      return person.create(data, done);
+    });
   }
 }
 
