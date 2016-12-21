@@ -15,7 +15,7 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/', ensureAuth, (req, res) => {
-  res.json(req.user);
+  res.sendStatus(200);
 });
 
 router.get('/logout', (req, res) => {

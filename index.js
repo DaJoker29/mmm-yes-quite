@@ -15,6 +15,7 @@ const helpers = require('./helpers');
 
 const authRoutes = routes.AUTH;
 const rootRoutes = routes.ROOT;
+const userRoutes = routes.USER;
 
 /**
  * Mmm, Yes, Quite - An entertainment podcast created by Dewitt and Bjorn
@@ -52,8 +53,9 @@ passport.serializeUser(helpers.AUTH.SERIALIZE_USER);
 passport.deserializeUser(helpers.AUTH.DESERIALIZE_USER);
 
 // Add Routes
-app.use('/auth', authRoutes);
 app.use('/', rootRoutes);
+app.use('/auth', authRoutes);
+app.use('/user', userRoutes);
 
 // Start Server
 mongoose.connect(config.DATABASE.MONGOOSE_URL);
