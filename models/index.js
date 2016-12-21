@@ -1,5 +1,5 @@
 module.exports = {
-  person: require('./person').person,
-  post: require('./post').post,
-  episode: require('./episode').episode,
+  PERSON: require('./person').person,
+  POST: require('./post').post,
+  EPISODE: require('./episode').episode,
 };
