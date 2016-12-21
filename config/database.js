@@ -1,0 +1,1 @@
+module.exports.MONGOOSE_URL = 'mongodb://localhost/myq';
