@@ -11,7 +11,8 @@
     "postversion": "git push && git push --tags && git checkout develop && git merge --no-ff master -m 'Sync Develop branch' && git push",
     "install": "ln -si ../../tools/pre-commit.sh .git/hooks/pre-commit",
     "start": "pm2 start process.json",
-    "watch": "nodemon index.js --config nodemon.json",
+    "watch-server": "nodemon index.js --config nodemon.json",
+    "watch": "concurrently \"npm run watch-server\"",
     "dist": "./tools/upgrade.sh",
     "reload": "./tools/reload-server.sh"
   },
@@ -26,6 +27,9 @@
   },
   "homepage": "https://github.com/DaJoker29/mmm-yes-quite#readme",
   "dependencies": {
+    "body-parser": "1.15.2",
+    "concurrently": "3.1.0",
+    "connect-redis": "3.1.0",
     "debug": "https://registry.npmjs.org/debug/-/debug-2.4.5.tgz",
     "eslint": "3.12.2",
     "eslint-config-airbnb": "13.0.0",
@@ -33,9 +37,16 @@
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-jsx-a11y": "2.2.3",
     "eslint-plugin-react": "6.8.0",
+    "express": "4.14.0",
+    "express-session": "1.14.2",
+    "helmet": "3.1.0",
     "mongoose": "4.7.4",
     "mongoose-unique-validator": "1.0.3",
+    "morgan": "1.7.0",
     "nodemon": "1.11.0",
+    "passport": "0.3.2",
+    "passport-facebook": "2.1.1",
+    "passport-google-oauth": "1.0.0",
     "rand-token": "0.3.0"
   }
 }
