@@ -9,39 +9,44 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
-<body>
-  <!-- Start of content -->
-  <!-- Fixed Navigation -->
-  <nav class="navbar navbar-light bg-success navbar-fixed-top">
-    <a href="#" class="navbar-brand">
-      <img src="//i0.wp.com/mmmyesquite.com/wp-content/uploads/sites/3/2016/04/logo-sm-1.png?fit=500%2C500&ssl=1" alt="Mmm, Yes, Quite Logo" height="30" width="30">
-      MMMYESQUITE
-    </a>
-    <button type="button" class="navbar-toggler hidden-lg-up float-xs-right" data-toggle="collapse" data-target="#collapsedNav" aria-controls="collapsedNav" aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div class="collapse navbar-toggleable-md" id="collapsedNav">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a href="#" class="nav-link">Episodes</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Clips</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Videos</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
-        </li>
-      </ul>
-      <form class="form-inline float-xs-right">
-        <input type="text" class="form-control" placeholder="Search">
-        <button type="submit" class="btn btn-outline-primary">Search</button>
-      </form>
+<body >
+  <div class="container-fluid">
+    <!-- Start of content -->
+    <div class="row">
+      <!-- Sidebar / Navigation -->
+      <nav class="col-md-4 sidebar bg-inverse text-white text-xs-center">
+        <a href="#">
+          <h3 class="font-weight-bold text-success my-3">MMM.YES.QUITE.</h3>
+        </a>
+        <ul class="list-unstyled text-uppercase mt-3 h4">
+          <li class="my-2">
+            <a href="#">Episodes</a>
+          </li>
+          <li class="my-2">
+            <a href="#">Clips</a>
+          </li>
+          <li class="my-2">
+            <a href="#">Videos</a>
+          </li>
+          <li class="my-2">
+            <a href="#">Blog</a>
+          </li>
+          <li class="my-2">
+            <a href="#">About</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-outline-primary">Search</button>
+        </form>
+        <footer class="mt-3">Copyright &copy; 2016-2017 &bull; MyQ Productions</footer>
+      </nav>
+      <!-- Main Feed -->
+      <div class="main-feed col-md-8"></div>
     </div>
-  </nav>
+  </div>
   <!-- Audio Player -->
   <div id="audio-player" class="audio-player navbar navbar-dark bg-faded navbar-fixed-bottom">
     <div class="container-fluid">
@@ -76,9 +81,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
   <script>
+    /* eslint-disable */
     $(function() {
       $('[data-toggle="tooltip"').tooltip();
     });
+    /* eslint-enable */
   </script>
 </body>
 </html>
