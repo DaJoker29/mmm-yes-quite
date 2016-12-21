@@ -46,29 +46,28 @@
   <div id="audio-player" class="audio-player navbar navbar-dark bg-faded navbar-fixed-bottom">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4 previous-info text-muted text-xs-left">
-          <i class="fa fa-lg fa-step-backward pr-1"></i>
-          Episode V: Cinco De Episode
-          <i class="fa fa-info-circle" data-toggle="tooltip" title="Text description of this track"></i>
+        <div class="col-lg-4 current-info text-success" data-toggle="tooltip" title="Text Teaser for this track">
+          Playing: Episode VI: Bigger, Longer, Uncut
         </div>
-        <div class="col-sm-4 current-info text-xs-center">
-          <i class="fa fa-lg fa-volume-up pr-1 text-primary"></i>
-          <i class="fa fa-lg fa-pause pr-1 text-primary"></i>
-          Episode VI: Bigger, Longer, Uncut
-          <i class="fa fa-info-circle" data-toggle="tooltip" title="Text description of this track"></i>
+        <div class="track-controls col-lg-4 text-xs-center">
+          <span class="text-muted mr-1">1:42 / 3:01</span>
+          <a href="#"><i class="fa fa-lg fa-volume-up mr-1"></i></a>
+          <a href="#"><i class="fa fa-lg fa-step-backward mr-1"></i></a>
+          <a href="#"><i class="fa fa-lg fa-pause mr-1"></i></a>
+          <a href="#"><i class="fa fa-lg fa-step-forward mr-1"></i></a>
+          <a href="#"><i class="fa fa-lg fa-th-list mr-3"></i></a>
+          <a href="#"><i class="fa fa-lg fa-share-alt mr-1"></i></a>
         </div>
-        <div class="col-sm-4 next-info text-muted text-xs-right">
-          Episode VII: The Next Episode
-          <i class="fa fa-info-circle" data-toggle="tooltip" title="Text description of this track"></i>
-          <i class="fa fa-lg fa-step-forward pl-1"></i>
+        <div class="col-lg-4 next-info text-muted text-xs-right" data-toggle="tooltip" title="Text teaser for this track">
+          Coming Up: Episode VII: The Next Episode
         </div>
       </div>
     </div>
-    <progress id="audio-timeline" class="mt-1 mb-0 audio-timeline progress progress-animated" value="25" max="100"></progress>
+    <progress id="audio-timeline" class="mt-1 mb-0 audio-timeline progress progress-success" value="75" max="100"></progress>
   </div>
   <!-- Main Feed -->
   <div class="container">
-
+    
   </div>
   <!-- End of Content -->
 
