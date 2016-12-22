@@ -12,7 +12,7 @@
     "install": "ln -si ../../tools/pre-commit.sh .git/hooks/pre-commit",
     "start": "pm2 start process.json",
     "watch-server": "nodemon index.js --config nodemon.json",
-    "watch": "concurrently \"npm run watch-server\"",
+    "dev": "concurrently \"npm run watch-server\"",
     "dist": "./tools/upgrade.sh",
     "reload": "./tools/reload-server.sh"
   },

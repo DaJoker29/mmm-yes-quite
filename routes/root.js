@@ -1,10 +1,7 @@
 const express = require('express');
-const authHelpers = require('../helpers').AUTH;
 const path = require('path');
 
 const router = express.Router();
-const ensureAuth = authHelpers.ENSURE_AUTH;
-
 
 router.get('/login', (req, res) => {
   if (req.isAuthenticated()) {
@@ -14,7 +11,7 @@ router.get('/login', (req, res) => {
   }
 });
 
-router.get('/', ensureAuth, (req, res) => {
+router.get('/', (req, res) => {
   res.sendStatus(200);
 });
 
