@@ -38,3 +38,6 @@ jspm_packages
 
 # Private Configuration
 secret.json
+
+# Compiled Data
+public
