@@ -1,6 +1,7 @@
 {
   "env": {
-    "node": true
+    "node": true,
+    "browser": true
   },
   "rules": {
     "quotes": [2, "single"],
@@ -17,6 +18,7 @@
     "yoda": [2, "always"],
     "func-names": 0,
     "global-require": 0,
+    "react/prefer-stateless-function": 1
   },
   "extends": [
     "airbnb",

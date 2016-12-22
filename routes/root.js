@@ -12,7 +12,7 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/', (req, res) => {
-  res.sendStatus(200);
+  res.sendFile(path.join(`${__dirname}/../client/index.html`));
 });
 
 router.get('/logout', (req, res) => {
