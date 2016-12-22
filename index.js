@@ -40,6 +40,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/templates', express.static(path.join(__dirname, 'templates')));
 app.use(morgan('development' === process.env.NODE_ENV ? 'dev' : 'combined'));
 app.use(helmet());
 app.use(session(sessionSettings));
