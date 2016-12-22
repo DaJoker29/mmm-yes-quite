@@ -221,6 +221,16 @@
       "from": "babel-plugin-check-es2015-constants@>=6.3.13 <7.0.0",
       "resolved": "https://registry.npmjs.org/babel-plugin-check-es2015-constants/-/babel-plugin-check-es2015-constants-6.8.0.tgz"
     },
+    "babel-plugin-react-html-attrs": {
+      "version": "2.0.0",
+      "from": "babel-plugin-react-html-attrs@latest",
+      "resolved": "https://registry.npmjs.org/babel-plugin-react-html-attrs/-/babel-plugin-react-html-attrs-2.0.0.tgz"
+    },
+    "babel-plugin-syntax-class-properties": {
+      "version": "6.13.0",
+      "from": "babel-plugin-syntax-class-properties@>=6.8.0 <7.0.0",
+      "resolved": "https://registry.npmjs.org/babel-plugin-syntax-class-properties/-/babel-plugin-syntax-class-properties-6.13.0.tgz"
+    },
     "babel-plugin-syntax-flow": {
       "version": "6.18.0",
       "from": "babel-plugin-syntax-flow@>=6.3.13 <7.0.0",
@@ -230,6 +240,11 @@
       "version": "6.18.0",
       "from": "babel-plugin-syntax-jsx@>=6.3.13 <7.0.0",
       "resolved": "https://registry.npmjs.org/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz"
+    },
+    "babel-plugin-transform-class-properties": {
+      "version": "6.19.0",
+      "from": "babel-plugin-transform-class-properties@latest",
+      "resolved": "https://registry.npmjs.org/babel-plugin-transform-class-properties/-/babel-plugin-transform-class-properties-6.19.0.tgz"
     },
     "babel-plugin-transform-es2015-arrow-functions": {
       "version": "6.8.0",
@@ -1413,6 +1428,16 @@
       "from": "hide-powered-by@1.0.0",
       "resolved": "https://registry.npmjs.org/hide-powered-by/-/hide-powered-by-1.0.0.tgz"
     },
+    "history": {
+      "version": "3.2.1",
+      "from": "history@>=3.0.0 <4.0.0",
+      "resolved": "https://registry.npmjs.org/history/-/history-3.2.1.tgz"
+    },
+    "hoist-non-react-statics": {
+      "version": "1.2.0",
+      "from": "hoist-non-react-statics@>=1.2.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz"
+    },
     "home-or-tmp": {
       "version": "2.0.0",
       "from": "home-or-tmp@>=2.0.0 <3.0.0",
@@ -2381,6 +2406,11 @@
       "from": "qs@6.2.0",
       "resolved": "https://registry.npmjs.org/qs/-/qs-6.2.0.tgz"
     },
+    "query-string": {
+      "version": "4.2.3",
+      "from": "query-string@>=4.2.2 <5.0.0",
+      "resolved": "https://registry.npmjs.org/query-string/-/query-string-4.2.3.tgz"
+    },
     "querystring": {
       "version": "0.2.0",
       "from": "querystring@0.2.0",
@@ -2459,6 +2489,11 @@
           "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.4.4.tgz"
         }
       }
+    },
+    "react-router": {
+      "version": "3.0.0",
+      "from": "react-router@latest",
+      "resolved": "https://registry.npmjs.org/react-router/-/react-router-3.0.0.tgz"
     },
     "read-all-stream": {
       "version": "3.1.0",
@@ -2803,6 +2838,11 @@
       "from": "stream-shift@>=1.0.0 <2.0.0",
       "resolved": "https://registry.npmjs.org/stream-shift/-/stream-shift-1.0.0.tgz"
     },
+    "strict-uri-encode": {
+      "version": "1.1.0",
+      "from": "strict-uri-encode@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz"
+    },
     "string_decoder": {
       "version": "0.10.31",
       "from": "string_decoder@>=0.10.0 <0.11.0",
@@ -3030,6 +3070,11 @@
       "version": "0.0.4",
       "from": "vm-browserify@0.0.4",
       "resolved": "https://registry.npmjs.org/vm-browserify/-/vm-browserify-0.0.4.tgz"
+    },
+    "warning": {
+      "version": "3.0.0",
+      "from": "warning@>=3.0.0 <4.0.0",
+      "resolved": "https://registry.npmjs.org/warning/-/warning-3.0.0.tgz"
     },
     "watchpack": {
       "version": "0.2.9",

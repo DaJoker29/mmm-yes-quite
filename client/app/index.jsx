@@ -1,10 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { Router, Route, browserHistory } from 'react-router';
+import Home from './containers/Home';
+import MainLayout from './layouts/main';
 
-class App extends React.Component {
-  render() {
-    return <p>Hello Pink!</p>;
-  }
-}
-
-render(<App />, document.getElementById('app'));
+render((
+  <Router history={browserHistory}>
+    <Route component={MainLayout}>
+      <Route path="/" component={Home} />
+    </Route>
+  </Router>
+), document.getElementById('app'));
