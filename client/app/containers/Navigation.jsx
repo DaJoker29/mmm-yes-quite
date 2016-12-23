@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavLink from '../presentation/NavLink';
 
 class Navigation extends Component {
   render() {
@@ -30,18 +31,10 @@ class Navigation extends Component {
         <div class="navbar-brand float-xs-left">mmmyesquite</div>
         <div class="collapse navbar-toggleable-md" id="navbar-collapse">
           <ul class="nav navbar-nav nav-pills text-uppercase" role="navigation">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Archives</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link disabled">Store</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Subscribe</a>
-            </li>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/archive">Archive</NavLink>
+            <NavLink to="/store">Store</NavLink>
+            <NavLink to="/subscribe">Subscribe</NavLink>
           </ul>
         </div>
       </nav>
