@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { PropTypes, Component } from 'react';
+import { connect } from 'react-redux';
+import Feed from '../containers/Feed';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div class="container">
@@ -40,58 +42,9 @@ class App extends React.Component {
                   </ul>
                 </div>
               </div>
-              <div class="card card-outline-success text-white">
-                <div class="card-block">
-                  <h4 class="card-title"><i class="fa fa-microphone text-success mr-1" />Ep. 6: Bigger, Longer, Uncut <small class="text-muted float-xs-right"><i class="fa fa-minus" /> Remove from Playlist</small></h4>
-                  <p class="card-subtitle text-muted">January 7, 2017</p>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestias quos optio corporis reprehenderit commodi culpa possimus! Odit, eligendi obcaecati optio laborum nisi earum quas. Autem enim sapiente, esse reiciendis.</p>
-                </div>
-              </div>
-              <div class="card card-outline-success text-white">
-                <div class="card-block">
-                  <h4 class="card-title"><i class="fa fa-microphone text-success mr-1" />Ep. 5: Cinco The Episode <small class="text-muted float-xs-right"><i class="fa fa-plus" /> Add to Playlist</small></h4>
-                  <p class="card-subtitle text-muted">January 2, 2017</p>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestias quos optio corporis reprehenderit commodi culpa possimus!</p>
-                </div>
-              </div>
-              <div class="card card-outline-danger text-white">
-                <div class="card-block">
-                  <h4 class="card-title"><i class="fa fa-file-text-o text-danger mr-1" />Writing Contest</h4>
-                  <p class="card-subtitle text-muted">December 29, 2016</p>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestias quos optio corporis reprehenderit commodi culpa possimus! Odit, eligendi obcaecati optio laborum nisi earum quas. Autem enim sapiente, esse reiciendis.</p>
-                </div>
-              </div>
-              <div class="card card-outline-primary text-white">
-                <div class="card-block">
-                  <h4 class="card-title"><i class="fa fa-video-camera text-primary mr-1" />How to Get Away with Jaywalking <small class="text-muted float-xs-right"><i class="fa fa-youtube" /> Watch on YouTube</small></h4>
-                  <p class="card-subtitle text-muted">December 23, 2016</p>
-                </div>
-                <div class="card-block embed-responsive embed-responsive-16by9">
-                  <img class="img-fluid" src="http://placehold.it/1440x1080" alt="" />
-                </div>
-                <div class="card-block">
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestias quos optio corporis reprehenderit commodi culpa possimus! Odit, eligendi obcaecati optio laborum nisi earum quas. Autem enim sapiente, esse reiciendis.</p>
-                </div>
-              </div>
-              <div class="card card-outline-danger text-white">
-                <div class="card-block">
-                  <h4 class="card-title"><i class="fa fa-file-text-o text-danger mr-1" />Writing Contest</h4>
-                  <p class="card-subtitle text-muted">December 29, 2016</p>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestias quos optio corporis reprehenderit commodi culpa possimus! Odit, eligendi obcaecati optio laborum nisi earum quas. Autem enim sapiente, esse reiciendis.</p>
-                </div>
-              </div>
-              <div class="card card-outline-primary text-white">
-                <div class="card-block">
-                  <h4 class="card-title"><i class="fa fa-video-camera text-primary mr-1" />How to Get Away with Jaywalking <small class="text-muted float-xs-right"><i class="fa fa-youtube" /> Watch on YouTube</small></h4>
-                  <p class="card-subtitle text-muted">December 23, 2016</p>
-                </div>
-                <div class="card-block embed-responsive embed-responsive-16by9">
-                  <img class="img-fluid" src="http://placehold.it/1440x1080" alt="" />
-                </div>
-                <div class="card-block">
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestias quos optio corporis reprehenderit commodi culpa possimus! Odit, eligendi obcaecati optio laborum nisi earum quas. Autem enim sapiente, esse reiciendis.</p>
-                </div>
-              </div>
+
+              <Feed />
+
             </div>
           </div>
         </div>
