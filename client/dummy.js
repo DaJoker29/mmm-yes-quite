@@ -1,0 +1,48 @@
+module.exports = [
+  {
+    type: 'episode',
+    title: 'Ep. 6: Bigger, Longer, Uncut',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    media: '',
+    date: Date(2017, 1, 7),
+  },
+  {
+    type: 'episode',
+    title: 'Ep. 5: Cinco The Episode',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    media: '',
+    date: Date(2017, 1, 2),
+  },
+  {
+    type: 'article',
+    title: 'The Writing Contest',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    date: Date(2016, 12, 29),
+  },
+  {
+    type: 'video',
+    title: 'How to Get Away with Jaywalking',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    media: '',
+    date: Date(2016, 12, 23),
+  },
+  {
+    type: 'episode',
+    title: 'Ep. 4: Fourth Times a Charm',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    media: '',
+    date: Date(2016, 12, 11),
+  },
+  {
+    type: 'article',
+    title: 'What happened there?!',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    date: Date(2016, 12, 4),
+  },
+];
