@@ -39,6 +39,7 @@
     "body-parser": "1.15.2",
     "concurrently": "3.1.0",
     "connect-redis": "3.1.0",
+    "css-loader": "0.26.1",
     "debug": "https://registry.npmjs.org/debug/-/debug-2.4.5.tgz",
     "eslint": "3.12.2",
     "eslint-config-airbnb": "13.0.0",
@@ -48,6 +49,7 @@
     "eslint-plugin-react": "6.8.0",
     "express": "4.14.0",
     "express-session": "1.14.2",
+    "extract-text-webpack-plugin": "1.0.1",
     "helmet": "3.1.0",
     "isomorphic-fetch": "https://registry.npmjs.org/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz",
     "moment": "https://registry.npmjs.org/moment/-/moment-2.17.1.tgz",
@@ -67,6 +69,7 @@
     "redux": "3.6.0",
     "redux-logger": "2.7.4",
     "redux-thunk": "2.1.0",
+    "style-loader": "0.13.1",
     "webpack": "1.14.0",
     "webpack-dev-server": "https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-1.16.2.tgz",
     "webpack-hot-middleware": "https://registry.npmjs.org/webpack-hot-middleware/-/webpack-hot-middleware-2.13.2.tgz"

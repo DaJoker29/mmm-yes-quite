@@ -6,6 +6,7 @@ import configureStore from './configureStore';
 import Home from './containers/Home';
 import Archive from './containers/Archive';
 import MainLayout from './layouts/main';
+import '../css/index.css';
 
 const store = configureStore();
 
