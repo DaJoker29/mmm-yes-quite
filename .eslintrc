@@ -21,7 +21,10 @@
     "react/prefer-stateless-function": 1,
     "react/no-unknown-property": [1, { ignore: ["class"] }],
     "max-len": 0,
-    "jsx-a11y/href-no-hash": 0
+    "jsx-a11y/href-no-hash": 0,
+    "import/prefer-default-export": 0,
+    "react/forbid-prop-types": 0,
+    "consistent-return": 1
   },
   "extends": [
     "airbnb",
