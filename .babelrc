@@ -1,4 +1,7 @@
 {
   presets: ["es2015", "react"],
-  plugins: ["transform-class-properties", "react-html-attrs"]
+  plugins: [
+    "transform-class-properties", 
+    "react-html-attrs", 
+  ]
 }
