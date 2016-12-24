@@ -11,10 +11,11 @@
     "postversion": "git push && git push --tags && git checkout develop && git merge --no-ff master -m 'Sync Develop branch' && git push",
     "install": "ln -si ../../tools/pre-commit.sh .git/hooks/pre-commit",
     "prod": "npm run build && pm2 start process.json",
+    "dev": "concurrently \"npm run watch-server\" \"npm run watch-bundle\"",
     "watch-server": "nodemon index.js --config nodemon.json",
     "watch-bundle": "webpack-dev-server --inline --hot --content-base client --config config/webpack.dev.js",
     "build": "webpack -p --config config/webpack.prod.js",
-    "start": "concurrently \"npm run watch-server\" \"npm run watch-bundle\"",
+    "start": "npm run dev",
     "dist": "./tools/upgrade.sh",
     "reload": "./tools/reload-server.sh"
   },

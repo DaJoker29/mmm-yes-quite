@@ -33,7 +33,6 @@ const sessionSettings = {
   store: new RedisStore({ host: 'localhost', port: 6379 }),
 };
 
-
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -50,9 +49,12 @@ passport.serializeUser(helpers.AUTH.SERIALIZE_USER);
 passport.deserializeUser(helpers.AUTH.DESERIALIZE_USER);
 
 // Add Routes
+app.get('*', (req, res) => {
+  res.send('Uh oh.');
+});
+
 app.use('/auth', authRoutes);
 app.use('/user', userRoutes);
-
 
 // Start Server
 mongoose.connect(config.DATABASE.MONGOOSE_URL);
