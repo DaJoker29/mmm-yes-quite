@@ -1,4 +1,4 @@
-import { RECEIVE_FEED } from '../actions';
+import { RECEIVE_FEED } from './actions';
 
 function feedReducer(state = {}, action) {
   switch (action.type) {

@@ -14,7 +14,7 @@ const FeedArticle = props => (
 
 FeedArticle.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.date.isRequired,
+  date: PropTypes.string.isRequired,
   teaser: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
 };
