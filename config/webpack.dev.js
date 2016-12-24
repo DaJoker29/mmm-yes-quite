@@ -12,7 +12,6 @@ const config = {
   ],
   output: {
     path: BASE_DIR,
-    publicPath: '/',
     filename: 'bundle.js',
   },
   module: {
