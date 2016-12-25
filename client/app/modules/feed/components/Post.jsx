@@ -7,7 +7,7 @@ const Post = ({ post }) => {
   let color = '';
 
   switch (type) {
-    case 'episode':
+    case 'audio':
       icon = 'microphone';
       color = 'success';
       break;

@@ -1965,7 +1965,7 @@
     },
     "lodash": {
       "version": "4.17.2",
-      "from": "lodash@>=4.0.0 <5.0.0",
+      "from": "https://registry.npmjs.org/lodash/-/lodash-4.17.2.tgz",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.2.tgz"
     },
     "lodash-es": {

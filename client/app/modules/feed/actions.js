@@ -2,17 +2,23 @@
 import * as t from './actionTypes';
 import dummy from './dummy';
 
-
 export function requestFeed() {
   return {
     type: t.REQUEST,
   };
 }
 
-export function receiveFeed(feed) {
+export function receiveFeed(posts) {
   return {
     type: t.RECEIVE,
-    feed,
+    posts,
+  };
+}
+
+export function setVisibilityFilter(filter) {
+  return {
+    type: t.SET_FILTER,
+    filter,
   };
 }
 
@@ -23,7 +29,8 @@ function fetchPosts() {
 }
 
 function shouldFetchPosts({ feed }) {
-  if (!feed || 0 === feed.length) {
+  const { posts } = feed;
+  if (!posts || 0 === posts.length) {
     return true;
   }
   return false;
