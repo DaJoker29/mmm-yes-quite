@@ -69,6 +69,7 @@
     "redux": "3.6.0",
     "redux-logger": "2.7.4",
     "redux-thunk": "2.1.0",
+    "reselect": "2.5.4",
     "style-loader": "0.13.1",
     "webpack": "1.14.0",
     "webpack-dev-server": "https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-1.16.2.tgz",

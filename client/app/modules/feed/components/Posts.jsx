@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { getAll } from '../selectors';
 import { fetchPostsIfNeeded } from '../actions';
 import Post from './Post';
 
@@ -25,11 +27,8 @@ Posts.propTypes = {
   dispatch: PropTypes.func,
 };
 
-function mapStateToProps(state) {
-  const { feed } = state;
-  return {
-    feed,
-  };
-}
-
-export default connect(mapStateToProps)(Posts);
+export default connect(
+  createStructuredSelector({
+    feed: getAll,
+  }),
+)(Posts);
