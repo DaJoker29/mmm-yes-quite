@@ -1,6 +1,6 @@
 // import fetch from 'isomorphic-fetch';
 import * as t from './actionTypes';
-import dummy from './dummy';
+import dummyPosts from './dummy';
 
 export function requestFeed() {
   return {
@@ -24,7 +24,7 @@ export function setVisibilityFilter(filter) {
 
 function fetchPosts() {
   return (dispatch) => {
-    dispatch(receiveFeed(dummy));
+    dispatch(receiveFeed(dummyPosts));
   };
 }
 

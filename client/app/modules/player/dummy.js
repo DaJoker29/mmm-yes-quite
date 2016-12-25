@@ -1,0 +1,32 @@
+export default [
+  {
+    id: 2,
+    type: 'audio',
+    title: 'Ep. 4: Fourth Times a Charm',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    media: '',
+    date: new Date(2016, 12, 11),
+    length: 5146,
+  },
+  {
+    id: 6,
+    type: 'audio',
+    title: 'Ep. 6: Bigger, Longer, Uncut',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    media: '',
+    date: new Date(2017, 1, 7),
+    length: 7722,
+  },
+  {
+    id: 5,
+    type: 'audio',
+    title: 'Ep. 5: Cinco The Episode',
+    teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
+    media: '',
+    date: new Date(2017, 1, 2),
+    length: 709,
+  },
+];

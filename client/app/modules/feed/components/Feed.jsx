@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 // import { createStructuredSelector } from 'reselect';
-import { getVisiblePosts } from '../selectors';
+import { getVisiblePosts, getFetching } from '../selectors';
 import { fetchPostsIfNeeded } from '../actions';
 import Filter from './Filter';
 import Posts from './Posts';
@@ -14,7 +14,7 @@ class Feed extends Component {
   }
 
   render() {
-    const { posts } = this.props;
+    const { posts, fetching } = this.props;
     return (
       <div class="container">
         <div class="row">
@@ -26,7 +26,7 @@ class Feed extends Component {
                 </div>
                 <Filter />
               </div>
-              <Posts posts={posts} />
+              { fetching ? <i class="fa fa-spinner fa-5x text-xs-center fa-pulse w-100 mt-3" /> : <Posts posts={posts} /> }
             </div>
           </div>
         </div>
@@ -38,10 +38,12 @@ class Feed extends Component {
 Feed.propTypes = {
   posts: PropTypes.array,
   dispatch: PropTypes.func,
+  fetching: PropTypes.bool,
 };
 
 const mapStateToProps = state => ({
   posts: getVisiblePosts(state),
+  fetching: getFetching(state),
 });
 
 export default connect(mapStateToProps)(Feed);

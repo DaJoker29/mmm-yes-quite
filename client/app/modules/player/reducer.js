@@ -1,7 +1,7 @@
 import * as t from './actionTypes';
-import { State as initialState } from './model';
+import { State as initialState } from './models';
 
-function feedReducer(state = initialState, action) {
+function playerReducer(state = initialState, action) {
   switch (action.type) {
     case t.REQUEST:
       return Object.assign({}, state, {
@@ -9,16 +9,12 @@ function feedReducer(state = initialState, action) {
       });
     case t.RECEIVE:
       return Object.assign({}, state, { 
-        posts: action.posts,
+        playlist: action.playlist,
         fetching: false,
-      });
-    case t.SET_FILTER:
-      return Object.assign({}, state, {
-        filter: action.filter,
       });
     default:
       return state;
   }
 }
 
-export default feedReducer;
+export default playerReducer;
