@@ -1,6 +1,6 @@
 {
   "name": "mmm-yes-quite",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Open Source web site for the Mmm, Yes, Quite podcast",
   "main": "index.js",
   "scripts": {
