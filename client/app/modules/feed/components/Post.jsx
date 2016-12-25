@@ -26,7 +26,7 @@ const Post = ({ post }) => {
   }
 
   return (
-    <div class={`card card-outline-${color} text-white`}>
+    <div class={`card card-outline-${color}`}>
       <div class="card-block">
         <h4 class="card-title"><i class={`fa fa-${icon} text-${color} mr-1`} />{ title }</h4>
         <p class="card-subtitle text-muted">{ moment(date).format('MMMM Do, YYYY') }</p>

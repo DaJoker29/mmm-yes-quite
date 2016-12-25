@@ -1,4 +1,4 @@
-const dummyData = [
+export default [
   {
     id: 6,
     type: 'audio',
@@ -52,5 +52,3 @@ const dummyData = [
     date: new Date(2016, 12, 4),
   },
 ];
-
-export default dummyData;
