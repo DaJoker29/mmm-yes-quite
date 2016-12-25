@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Navigation } from './modules/navigation';
-import { AudioPlayer, Playlist } from './modules/audio-player';
+import { AudioPlayer, Playlist } from './modules/player';
 
 const Layout = ({ children }) => (
   <div>
