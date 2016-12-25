@@ -1,19 +1,24 @@
-import fetch from 'isomorphic-fetch';
+// import fetch from 'isomorphic-fetch';
+import * as t from './actionTypes';
 import dummy from './dummy';
-
-export const REQUEST_FEED = 'REQUEST_FEED';
-export const RECEIVE_FEED = 'RECEIVE_FEED';
 
 export function requestFeed() {
   return {
-    type: REQUEST_FEED,
+    type: t.REQUEST,
   };
 }
 
-export function receiveFeed(feed) {
+export function receiveFeed(posts) {
   return {
-    type: RECEIVE_FEED,
-    feed,
+    type: t.RECEIVE,
+    posts,
+  };
+}
+
+export function setVisibilityFilter(filter) {
+  return {
+    type: t.SET_FILTER,
+    filter,
   };
 }
 
@@ -24,7 +29,8 @@ function fetchPosts() {
 }
 
 function shouldFetchPosts({ feed }) {
-  if (!feed || 0 === feed.length) {
+  const { posts } = feed;
+  if (!posts || 0 === posts.length) {
     return true;
   }
   return false;
