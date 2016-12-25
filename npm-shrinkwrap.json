@@ -1965,7 +1965,7 @@
     },
     "lodash": {
       "version": "4.17.2",
-      "from": "lodash@>=4.0.0 <5.0.0",
+      "from": "https://registry.npmjs.org/lodash/-/lodash-4.17.2.tgz",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.2.tgz"
     },
     "lodash-es": {
@@ -3056,6 +3056,11 @@
       "version": "1.0.0",
       "from": "requires-port@>=1.0.0 <2.0.0",
       "resolved": "https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz"
+    },
+    "reselect": {
+      "version": "2.5.4",
+      "from": "reselect@latest",
+      "resolved": "https://registry.npmjs.org/reselect/-/reselect-2.5.4.tgz"
     },
     "resolve": {
       "version": "1.2.0",

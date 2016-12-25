@@ -1,7 +1,7 @@
 const dummyData = [
   {
     id: 6,
-    type: 'episode',
+    type: 'audio',
     title: 'Ep. 6: Bigger, Longer, Uncut',
     teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
@@ -10,7 +10,7 @@ const dummyData = [
   },
   {
     id: 5,
-    type: 'episode',
+    type: 'audio',
     title: 'Ep. 5: Cinco The Episode',
     teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
@@ -31,12 +31,12 @@ const dummyData = [
     title: 'How to Get Away with Jaywalking',
     teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
-    media: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    media: '',
     date: new Date(2016, 12, 23),
   },
   {
     id: 2,
-    type: 'episode',
+    type: 'audio',
     title: 'Ep. 4: Fourth Times a Charm',
     teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',

@@ -1,11 +1,16 @@
-import { RECEIVE_FEED } from './actions';
+import * as t from './actionTypes';
+import { State as initialState } from './model';
 
-function feedReducer(state = [], action) {
-  const newArray = state.concat(action.feed);
-
+function feedReducer(state = initialState, action) {
   switch (action.type) {
-    case RECEIVE_FEED:
-      return newArray;
+    case t.RECEIVE:
+      return Object.assign({}, state, { 
+        posts: action.posts, 
+      });
+    case t.SET_FILTER:
+      return Object.assign({}, state, {
+        filter: action.filter,
+      });
     default:
       return state;
   }
