@@ -1,5 +1,6 @@
 export const State = {
   playlist: [],
+  playing: 0,
 };
 
 export const Track = {
@@ -12,6 +13,3 @@ export const Track = {
   date: Date,
   length: Number,
 };
-
-export const currentTrack = playlist => playlist[0];
-export const nextTrack = playlist => playlist[1];
