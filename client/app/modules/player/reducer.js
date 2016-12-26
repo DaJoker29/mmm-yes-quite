@@ -12,6 +12,14 @@ function playerReducer(state = initialState, action) {
         playlist: action.playlist,
         fetching: false,
       });
+    case t.PLAY:
+      return Object.assign({}, state, {
+        status: 'playing',
+      });
+    case t.PAUSE:
+      return Object.assign({}, state, {
+        status: 'paused',
+      });
     default:
       return state;
   }

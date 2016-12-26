@@ -9,18 +9,19 @@ const playlistLength = playlist => playlist.reduce((a, b) => {
 }, 0);
 
 const currentTrack = (state) => {
-  const { playlist, playing } = state[NAME];
-  return 0 < playlist.length ? playlist[playing] : 'N/A';
+  const { playlist, current } = state[NAME];
+  return 0 < playlist.length ? playlist[current] : 'N/A';
 };
 
 const nextTrack = (state) => {
-  const { playlist, playing } = state[NAME];
-  return playlist[playing + 1] ? playlist[playing + 1] : 'N/A';
+  const { playlist, current } = state[NAME];
+  return playlist[current + 1] ? playlist[current + 1] : 'N/A';
 };
 
 export const getPlaylist = state => state[NAME].playlist;
 export const getFetching = state => state[NAME].fetching;
 export const getCurrentTime = state => state[NAME].time;
+export const getStatus = state => state[NAME].status;
 export const getCurrentTrack = currentTrack;
 export const getNextTrack = nextTrack;
 export const getPlaylistLength = _.flowRight(playlistLength, getPlaylist);
