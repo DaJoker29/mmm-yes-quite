@@ -15,6 +15,10 @@ export function receivePlaylist(playlist) {
   };
 }
 
+export const loadPlayer = () => ({
+  type: t.LOAD,
+});
+
 function fetchPlaylist() {
   return (dispatch) => {
     dispatch(receivePlaylist(dummyPlaylist));

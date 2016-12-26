@@ -20,6 +20,7 @@ const nextTrack = (state) => {
 
 export const getPlaylist = state => state[NAME].playlist;
 export const getFetching = state => state[NAME].fetching;
+export const getCurrentTime = state => state[NAME].time;
 export const getCurrentTrack = currentTrack;
 export const getNextTrack = nextTrack;
 export const getPlaylistLength = _.flowRight(playlistLength, getPlaylist);

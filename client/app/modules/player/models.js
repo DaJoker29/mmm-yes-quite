@@ -1,6 +1,7 @@
 export const State = {
   playlist: [],
   playing: 0,
+  time: 0,
 };
 
 export const Track = {

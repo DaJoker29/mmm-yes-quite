@@ -12,7 +12,7 @@ export default [
   {
     id: 6,
     type: 'audio',
-    title: 'Ep. 6: Bigger, Longer, Uncut',
+    title: 'Ep. 6: Bigger, Longer, Titties',
     teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusamus.',
     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
     media: '',
