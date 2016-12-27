@@ -36,6 +36,19 @@ export function loadPlayer() {
   };
 }
 
+export function setTime(time) {
+  return {
+    type: t.SET_TIME,
+    time,
+  };
+}
+
+export function clearSeeking() {
+  return {
+    type: t.CLEAR_SEEKING,
+  };
+}
+
 export const play = () => ({
   type: t.PLAY,
 });
@@ -44,6 +57,20 @@ export const pause = () => ({
   type: t.PAUSE,
 });
 
+function calculateTime(seekPoint, state) {
+  const { player } = state;
+  const { current, playlist } = player;
+  const totalLength = playlist[current].length;
+  return (seekPoint / 100) * totalLength;
+}
+
+export function seekTo(seekPoint) {
+  return (dispatch, getState) => {
+    const newTime = calculateTime(seekPoint, getState());
+    dispatch(setTime(newTime));
+    dispatch(setElapsed(newTime));
+  };
+}
 
 export function togglePlaying() {
   return (dispatch, getState) => {

@@ -7,7 +7,7 @@ export default [
     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur voluptatem maiores unde ipsum enim, odit eius ea magni blanditiis ut, ex quae iste inventore cum, eveniet tenetur recusandae laborum!',
     media: 'http://mmmyesquite.com/wp-content/uploads/sites/3/2016/05/ep6_audio.m4a',
     date: new Date(2016, 12, 11),
-    length: 5146,
+    length: 3334,
   },
   {
     id: 6,

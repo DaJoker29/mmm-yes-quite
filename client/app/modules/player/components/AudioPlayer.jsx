@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Audio } from 'redux-audio';
-import { getCurrentTrack, getNextTrack, getElapsedTime, getStatus } from '../selectors';
-import { loadPlayer, togglePlaying, setElapsed } from '../actions';
+import { getCurrentTrack, getNextTrack, getElapsedTime, getStatus, getSeeking } from '../selectors';
+import { loadPlayer, togglePlaying, setElapsed, seekTo, clearSeeking } from '../actions';
 import AudioElement from './AudioElement';
 import AudioProgress from './AudioProgress';
 import { NAME } from '../constants';
@@ -12,8 +12,12 @@ class AudioPlayer extends Component {
     const { dispatch } = this.props;
     dispatch(loadPlayer());
     this.timer = setInterval(() => {
-      if (this.props.isPlaying) {
-        const elapsed = this.audio.querySelector('audio').played.end(0);
+      const audioObj = this.audio.querySelector('audio');
+      if ('number' === typeof this.props.seeking) {
+        audioObj.currentTime = Math.floor(this.props.seeking);
+        dispatch(clearSeeking());
+      } else if (this.props.isPlaying) {
+        const elapsed = audioObj.currentTime;
         dispatch(setElapsed(Math.floor(elapsed)));
       }
     }, 1000);
@@ -24,7 +28,7 @@ class AudioPlayer extends Component {
   }
 
   render() {
-    const { currentTrack, nextTrack, elapsed, togglePlay, isPlaying } = this.props;
+    const { currentTrack, nextTrack, elapsed, togglePlay, isPlaying, seekTo } = this.props;
     return (
       <div id="audio-player" ref={(audio) => { this.audio = audio; }} class="audio-player navbar navbar-dark bg-faded navbar-fixed-bottom">
         <div class="container-fluid">
@@ -37,7 +41,7 @@ class AudioPlayer extends Component {
             isPlaying={isPlaying} 
           />
         </div>
-        <AudioProgress elapsed={elapsed} length={currentTrack.length} />
+        <AudioProgress onChange={seekTo} elapsed={elapsed} length={currentTrack.length} />
       </div>
     );
   }
@@ -49,7 +53,9 @@ AudioPlayer.propTypes = {
   dispatch: PropTypes.func,
   elapsed: PropTypes.number,
   togglePlay: PropTypes.func,
+  seekTo: PropTypes.func,
   isPlaying: PropTypes.bool,
+  seeking: PropTypes.any,
 };
 
 const mapStateToProps = state => ({
@@ -57,11 +63,15 @@ const mapStateToProps = state => ({
   nextTrack: getNextTrack(state),
   elapsed: getElapsedTime(state),
   isPlaying: 'playing' === getStatus(state),
+  seeking: getSeeking(state),
 });
 
 const mapDispatchToProps = dispatch => ({
   togglePlay: () => {
     dispatch(togglePlaying());
+  },
+  seekTo: (seek) => {
+    dispatch(seekTo(seek));
   },
   dispatch,
 });

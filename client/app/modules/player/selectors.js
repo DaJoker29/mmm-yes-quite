@@ -22,6 +22,7 @@ export const getPlaylist = state => state[NAME].playlist;
 export const getFetching = state => state[NAME].fetching;
 export const getElapsedTime = state => state[NAME].elapsed;
 export const getStatus = state => state[NAME].status;
+export const getSeeking = state => state[NAME].seeking;
 export const getCurrentTrack = currentTrack;
 export const getNextTrack = nextTrack;
 export const getPlaylistLength = _.flowRight(playlistLength, getPlaylist);

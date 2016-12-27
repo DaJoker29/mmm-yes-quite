@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import * as t from './actionTypes';
 import { State as initialState } from './models';
 
@@ -23,6 +24,14 @@ function playerReducer(state = initialState, action) {
     case t.SET_ELAPSED:
       return Object.assign({}, state, {
         elapsed: action.elapsed,
+      });
+    case t.SET_TIME: 
+      return Object.assign({}, state, {
+        seeking: action.time,
+      });
+    case t.CLEAR_SEEKING:
+      return Object.assign({}, state, {
+        seeking: '',
       });
     default:
       return state;
