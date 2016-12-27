@@ -4,6 +4,7 @@ import { Audio } from 'redux-audio';
 import { getCurrentTrack, getNextTrack, getElapsedTime, getStatus } from '../selectors';
 import { loadPlayer, togglePlaying, setElapsed } from '../actions';
 import AudioElement from './AudioElement';
+import AudioProgress from './AudioProgress';
 import { NAME } from '../constants';
 
 class AudioPlayer extends Component {
@@ -36,7 +37,7 @@ class AudioPlayer extends Component {
             isPlaying={isPlaying} 
           />
         </div>
-        <progress id="audio-timeline" class="mt-1 mb-0 audio-timeline progress progress-success" value="75" max="100" />
+        <AudioProgress elapsed={elapsed} length={currentTrack.length} />
       </div>
     );
   }
