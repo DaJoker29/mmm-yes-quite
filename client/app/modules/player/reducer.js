@@ -20,6 +20,10 @@ function playerReducer(state = initialState, action) {
       return Object.assign({}, state, {
         status: 'paused',
       });
+    case t.SET_ELAPSED:
+      return Object.assign({}, state, {
+        elapsed: action.elapsed,
+      });
     default:
       return state;
   }

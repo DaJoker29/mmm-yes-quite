@@ -20,7 +20,7 @@ const nextTrack = (state) => {
 
 export const getPlaylist = state => state[NAME].playlist;
 export const getFetching = state => state[NAME].fetching;
-export const getCurrentTime = state => state[NAME].time;
+export const getElapsedTime = state => state[NAME].elapsed;
 export const getStatus = state => state[NAME].status;
 export const getCurrentTrack = currentTrack;
 export const getNextTrack = nextTrack;

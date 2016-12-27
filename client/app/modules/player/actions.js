@@ -18,6 +18,13 @@ export function receivePlaylist(playlist) {
   };
 }
 
+export function setElapsed(elapsed) {
+  return {
+    type: t.SET_ELAPSED,
+    elapsed,
+  };
+}
+
 export const load = () => ({
   type: t.LOAD,
 });

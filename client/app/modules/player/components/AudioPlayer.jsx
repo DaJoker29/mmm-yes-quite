@@ -1,24 +1,37 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { getCurrentTrack, getNextTrack, getCurrentTime, getStatus } from '../selectors';
-import { loadPlayer, togglePlaying } from '../actions';
+import { Audio } from 'redux-audio';
+import { getCurrentTrack, getNextTrack, getElapsedTime, getStatus } from '../selectors';
+import { loadPlayer, togglePlaying, setElapsed } from '../actions';
 import AudioElement from './AudioElement';
+import { NAME } from '../constants';
 
 class AudioPlayer extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch(loadPlayer());
+    this.timer = setInterval(() => {
+      if (this.props.isPlaying) {
+        const elapsed = this.audio.querySelector('audio').played.end(0);
+        dispatch(setElapsed(Math.floor(elapsed)));
+      }
+    }, 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
   }
 
   render() {
-    const { currentTrack, nextTrack, time, togglePlay, isPlaying } = this.props;
+    const { currentTrack, nextTrack, elapsed, togglePlay, isPlaying } = this.props;
     return (
-      <div id="audio-player" class="audio-player navbar navbar-dark bg-faded navbar-fixed-bottom">
+      <div id="audio-player" ref={(audio) => { this.audio = audio; }} class="audio-player navbar navbar-dark bg-faded navbar-fixed-bottom">
         <div class="container-fluid">
+          <Audio uniqueId={NAME} />
           <AudioElement
             currentTrack={currentTrack} 
             nextTrack={nextTrack}
-            time={time} 
+            elapsed={elapsed} 
             togglePlay={togglePlay} 
             isPlaying={isPlaying} 
           />
@@ -33,7 +46,7 @@ AudioPlayer.propTypes = {
   currentTrack: PropTypes.any,
   nextTrack: PropTypes.any,
   dispatch: PropTypes.func,
-  time: PropTypes.number,
+  elapsed: PropTypes.number,
   togglePlay: PropTypes.func,
   isPlaying: PropTypes.bool,
 };
@@ -41,7 +54,7 @@ AudioPlayer.propTypes = {
 const mapStateToProps = state => ({
   currentTrack: getCurrentTrack(state),
   nextTrack: getNextTrack(state),
-  time: getCurrentTime(state),
+  elapsed: getElapsedTime(state),
   isPlaying: 'playing' === getStatus(state),
 });
 

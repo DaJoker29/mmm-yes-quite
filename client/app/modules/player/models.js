@@ -1,7 +1,7 @@
 export const State = {
   playlist: [],
   current: 0,
-  time: 0,
+  elapsed: 0,
   status: 'paused',
 };
 
