@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
+xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0/play-podcasts.xsd"
+>
+<channel>
+	<title>Mmm, Yes, Quite</title>
+	<atom:link href="https://mmmyesquite.com/podcast" rel="self" type="application/rss+xml" />
+	<link>https://mmmyesquite.com</link>
+	<description>An elegant podcast about nothing in particular.</description>
+	<lastBuildDate>Thu, 29 Sep 2016 05:29:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.7</generator>
+	<!-- podcast_generator="Blubrry PowerPress/7.0.3" mode="advanced" feedslug="podcast" -->
+	<itunes:summary>Join us, Bjorn and Dewitt, as we discuss a wide range of topics you care about, including movie, ice cream, and the coolness of Coldplay.</itunes:summary>
+	<itunes:author>Mmm, Yes, Quite</itunes:author>
+	<itunes:explicit>yes</itunes:explicit>
+	<itunes:image href="http://mq.zerodaedalus.com/wp-content/uploads/sites/3/2016/04/logo-1.png" />
+	<itunes:owner>
+		<itunes:name>Mmm, Yes, Quite</itunes:name>
+		<itunes:email>myqproductions@gmail.com</itunes:email>
+	</itunes:owner>
+	<managingEditor>myqproductions@gmail.com (Mmm, Yes, Quite)</managingEditor>
+	<copyright>All Rights Reserved</copyright>
+	<itunes:subtitle>Hella Classy</itunes:subtitle>
+	<image>
+		<title>Mmm, Yes, Quite</title>
+		<url>http://mq.zerodaedalus.com/wp-content/uploads/sites/3/2016/04/logo-1.png</url>
+		<link>https://mmmyesquite.com</link>
+	</image>
+	<itunes:category text="Comedy" />
+	<googleplay:email>myqproductions@gmail.com</googleplay:email>
+	<googleplay:explicit>Yes</googleplay:explicit>
+	<googleplay:category text="Comedy" />
+	<rawvoice:location>Manteca, California</rawvoice:location>
+	<rawvoice:frequency>Weekly</rawvoice:frequency>
+	<rawvoice:donate href="https://www.patreon.com/myqprods">Become a Patron of the Show.</rawvoice:donate>
+	<rawvoice:subscribe feed="https://mmmyesquite.com/podcast" itunes="http://itunes.apple.com/podcast/mmm-yes-quite/id1108243071" googleplay="https://play.google.com/music/m/I2mlsqqwhimaknebzvhdjpqlnhq?t%3DMmm,_Yes,_Quite"></rawvoice:subscribe>
+	<item>
+		<title>Ep. 6 &#8211; And One More Makes Three - Mmm, Yes, Quite</title>
+		<link>https://mmmyesquite.com/ep-6-one-makes-three/</link>
+		<pubDate>Tue, 10 May 2016 12:00:34 +0000</pubDate>
+		<guid isPermaLink="false">http://mmmyesquite.com/?p=85</guid>
+		<comments>https://mmmyesquite.com/ep-6-one-makes-three/#respond</comments>
+		<wfw:commentRss>https://mmmyesquite.com/ep-6-one-makes-three/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[#cupcakeinacake]]></category>
+		<category><![CDATA[#itsreoccurringnotrecurring]]></category>
+		<category><![CDATA[#misplacedrubberduck]]></category>
+		<category><![CDATA[#runningmanchallenge]]></category>
+		<category><![CDATA[#tatumdidwhat?]]></category>
+		<category><![CDATA[Aesop Rock]]></category>
+		<category><![CDATA[bananas]]></category>
+		<category><![CDATA[bjorn]]></category>
+		<category><![CDATA[bobby shmurda]]></category>
+		<category><![CDATA[CIA]]></category>
+		<category><![CDATA[dewitt]]></category>
+		<category><![CDATA[Donald Trump]]></category>
+		<category><![CDATA[Dragon Balls]]></category>
+		<category><![CDATA[food]]></category>
+		<category><![CDATA[French]]></category>
+		<category><![CDATA[french toast]]></category>
+		<category><![CDATA[Governator]]></category>
+		<category><![CDATA[Green Lantern]]></category>
+		<category><![CDATA[Gwen Stefani]]></category>
+		<category><![CDATA[Immortal Technique]]></category>
+		<category><![CDATA[James Franco]]></category>
+		<category><![CDATA[john-alan]]></category>
+		<category><![CDATA[Judy Garland]]></category>
+		<category><![CDATA[Lightsabers]]></category>
+		<category><![CDATA[Manteca]]></category>
+		<category><![CDATA[nutella]]></category>
+		<category><![CDATA[Oprah]]></category>
+		<category><![CDATA[Phillip deFranco]]></category>
+		<category><![CDATA[podcast]]></category>
+		<category><![CDATA[pokemon]]></category>
+		<category><![CDATA[recurringvsreoccurring]]></category>
+		<category><![CDATA[Skynet]]></category>
+		<category><![CDATA[Stephen Hawking]]></category>
+		<category><![CDATA[the Impossible Kid]]></category>
+		<description>We&#039;re upping the ante. Today, Bjorn and Dewitt are joined by their buddy John-Alan to discuss random facts and the three of them address some mistakes we&#039;ve made in the past. Also, our newest host throws down a tense challenge.
+
+Subscribe on iTunes, YouTube or Google Play.
+
+Timeline
+
+@0:00 - Cold Opening - Hot Pokemon
+@0:44 - Intro
+@1:36 - Let&#039;s Meet John-Alan. The Alan is important.
+@2:23 - Stephen Hawking/Stephen Skynet
+@4:29 - Manteca. Former home of water-slides. And exaggeration.
+@5:10 - Dewitt takes a stand about asses.
+@6:55 - We don&#039;t record next to an upturned mattress for audio purposes. Also, there are French people besides Pepe Lepew and Lumiere
+@9:49 - We butcher a news headline about Judy Garland&#039;s stolen slippers. Also, a discussion of magical movie props, including Dragon Balls, Lightsabers and the Green Lantern ring.
+@16:29 - #RunningManChallenge needs to learn the Running Man. It&#039;s the Harlem Shake all over again.
+@19:00 - (Redux) Aesop Rock released a new album and we still don&#039;t have anything to say about it. The Impossible Kid...although, he might be innocent as well. Also, John-Alan challenges Immortal Technique.
+@22:17 - SPONSOR: The Eightfold Path to Destruction
+@22:57 - Random Facts!
+@24:04 - John-Alan presents a list of random Hashtags for you to run with. #CupcakeInACake #TatumDidWhat? #MisplacedRubberDuck
+@26:37 - CIA is reliving their glory days a bit too much.
+@29:26 - Oprah&#039;s name is a typo. Also, cunnilingus is a funny word.
+@32:09 - Gwen Stefani has brought us a random fact this week. Also, bananas are dicks. They may be Donald Trump&#039;s running mate.
+@37:19 - Solution to uneven wear on shoes and Phillip DeFranco&#039;s exciting new career move.
+@39:40 - We discuss a potentially grievous oversight from an earlier episode.
+@44:33 - Bjorn has had a grudge against Nutella for years apparently. We also realize that we may need a weekly food segment because food is awesome.
+@49:15 - Recurring vs Reoccurring. You decide. #ItsReoccurringNotRecurring
+@50:27 - More anime. CrunchyRoll and Netflix should make a streaming baby.
+@51:30 - Some mumbling about watches and big dicks.
+@52:25 - JA calls out Immortal Technique to a gift-wrapping duel as well.
+@53:47 - Wrapping up.</description>
+		<content:encoded><![CDATA[<p>We&#8217;re upping the ante. Today, Bjorn and Dewitt are joined by their buddy John-Alan to discuss random facts and the three of them address some mistakes we&#8217;ve made in the past. Also, our newest host throws down a tense challenge.<!--more--></p>
+<p>Subscribe on <a href="http://itunes.apple.com/podcast/mmm-yes-quite/id1108243071">iTunes</a>, <a href="https://www.youtube.com/playlist?list=PLE5Fm7akV8oYWPsq4_Dlz5FuukIJL3rp0">YouTube </a>or <a href="https://play.google.com/music/m/I2mlsqqwhimaknebzvhdjpqlnhq?t%3DMmm,_Yes,_Quite">Google Play</a>.</p>
+<h3>Timeline</h3>
+<p>@0:00 &#8211; Cold Opening &#8211; Hot Pokemon<br />
+@0:44 &#8211; Intro<br />
+@1:36 &#8211; Let&#8217;s Meet John-Alan. The Alan is important.<br />
+@2:23 &#8211; Stephen Hawking/Stephen Skynet<br />
+@4:29 &#8211; Manteca. Former home of water-slides. And exaggeration.<br />
+@5:10 &#8211; Dewitt takes a stand about asses.<br />
+@6:55 &#8211; We don&#8217;t record next to an upturned mattress for audio purposes. Also, there are French people besides Pepe Lepew and Lumiere<br />
+@9:49 &#8211; We butcher a news headline about Judy Garland&#8217;s stolen slippers. Also, a discussion of magical movie props, including Dragon Balls, Lightsabers and the Green Lantern ring.<br />
+@16:29 &#8211; #RunningManChallenge needs to learn the Running Man. It&#8217;s the Harlem Shake all over again.<br />
+@19:00 &#8211; (Redux) Aesop Rock released a new album and we still don&#8217;t have anything to say about it. The Impossible Kid&#8230;although, he might be innocent as well. Also, John-Alan challenges Immortal Technique.<br />
+@22:17 &#8211; SPONSOR: The Eightfold Path to Destruction<br />
+@22:57 &#8211; Random Facts!<br />
+@24:04 &#8211; John-Alan presents a list of random Hashtags for you to run with. #CupcakeInACake #TatumDidWhat? #MisplacedRubberDuck<br />
+@26:37 &#8211; CIA is reliving their glory days a bit too much.<br />
+@29:26 &#8211; Oprah&#8217;s name is a typo. Also, cunnilingus is a funny word.<br />
+@32:09 &#8211; Gwen Stefani has brought us a random fact this week. Also, bananas are dicks. They may be Donald Trump&#8217;s running mate.<br />
+@37:19 &#8211; Solution to uneven wear on shoes and Phillip DeFranco&#8217;s exciting new career move.<br />
+@39:40 &#8211; We discuss a potentially grievous oversight from an earlier episode.<br />
+@44:33 &#8211; Bjorn has had a grudge against Nutella for years apparently. We also realize that we may need a weekly food segment because food is awesome.<br />
+@49:15 &#8211; Recurring vs Reoccurring. You decide. #ItsReoccurringNotRecurring<br />
+@50:27 &#8211; More anime. CrunchyRoll and Netflix should make a streaming baby.<br />
+@51:30 &#8211; Some mumbling about watches and big dicks.<br />
+@52:25 &#8211; JA calls out Immortal Technique to a gift-wrapping duel as well.<br />
+@53:47 &#8211; Wrapping up.</p>
+]]></content:encoded>
+		<enclosure url="http://mmmyesquite.com/wp-content/uploads/sites/3/2016/05/ep6_audio.m4a" length="54150314" type="audio/x-m4a" />
+		<itunes:subtitle>We are joined by our buddy John-Alan to bring you this new segment.</itunes:subtitle>
+		<itunes:summary><![CDATA[We're upping the ante. Today, Bjorn and Dewitt are joined by their buddy John-Alan to discuss random facts and the three of them address some mistakes we've made in the past. Also, our newest host throws down a tense challenge.<br />
+<br />
+Subscribe on <a href="http://itunes.apple.com/podcast/mmm-yes-quite/id1108243071">iTunes</a>, <a href="https://www.youtube.com/playlist?list=PLE5Fm7akV8oYWPsq4_Dlz5FuukIJL3rp0">YouTube </a>or <a href="https://play.google.com/music/m/I2mlsqqwhimaknebzvhdjpqlnhq?t%3DMmm,_Yes,_Quite">Google Play</a>.<br />
+<br />
+Timeline<br />
+<br />
+@0:00 - Cold Opening - Hot Pokemon<br />
+@0:44 - Intro<br />
+@1:36 - Let's Meet John-Alan. The Alan is important.<br />
+@2:23 - Stephen Hawking/Stephen Skynet<br />
+@4:29 - Manteca. Former home of water-slides. And exaggeration.<br />
+@5:10 - Dewitt takes a stand about asses.<br />
+@6:55 - We don't record next to an upturned mattress for audio purposes. Also, there are French people besides Pepe Lepew and Lumiere<br />
+@9:49 - We butcher a news headline about Judy Garland's stolen slippers. Also, a discussion of magical movie props, including Dragon Balls, Lightsabers and the Green Lantern ring.<br />
+@16:29 - #RunningManChallenge needs to learn the Running Man. It's the Harlem Shake all over again.<br />
+@19:00 - (Redux) Aesop Rock released a new album and we still don't have anything to say about it. The Impossible Kid...although, he might be innocent as well. Also, John-Alan challenges Immortal Technique.<br />
+@22:17 - SPONSOR: The Eightfold Path to Destruction<br />
+@22:57 - Random Facts!<br />
+@24:04 - John-Alan presents a list of random Hashtags for you to run with. #CupcakeInACake #TatumDidWhat? #MisplacedRubberDuck<br />
+@26:37 - CIA is reliving their glory days a bit too much.<br />
+@29:26 - Oprah's name is a typo. Also, cunnilingus is a funny word.<br />
+@32:09 - Gwen Stefani has brought us a random fact this week. Also, bananas are dicks. They may be Donald Trump's running mate.<br />
+@37:19 - Solution to uneven wear on shoes and Phillip DeFranco's exciting new career move.<br />
+@39:40 - We discuss a potentially grievous oversight from an earlier episode.<br />
+@44:33 - Bjorn has had a grudge against Nutella for years apparently. We also realize that we may need a weekly food segment because food is awesome.<br />
+@49:15 - Recurring vs Reoccurring. You decide. #ItsReoccurringNotRecurring<br />
+@50:27 - More anime. CrunchyRoll and Netflix should make a streaming baby.<br />
+@51:30 - Some mumbling about watches and big dicks.<br />
+@52:25 - JA calls out Immortal Technique to a gift-wrapping duel as well.<br />
+@53:47 - Wrapping up.]]></itunes:summary>
+		<itunes:author>Dewitt, Bjorn, &amp; John-Alan</itunes:author>
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:duration>55:35</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kicMFa2lzW4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Ep. 5 &#8211; Do as I Say, Not as I Do - Mmm, Yes, Quite</title>
+		<link>https://mmmyesquite.com/ep-5-say-not/</link>
+		<pubDate>Tue, 03 May 2016 12:00:47 +0000</pubDate>
+		<guid isPermaLink="false">http://mmmyesquite.com/?p=75</guid>
+		<comments>https://mmmyesquite.com/ep-5-say-not/#respond</comments>
+		<wfw:commentRss>https://mmmyesquite.com/ep-5-say-not/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<description>Dewitt and Bjorn journey into the world of random facts and super powers. Subscribe via iTunes, Google and more.
+
+Timeline
+
+@1:30 - Bjorn&#039;s Classroom Misadventures
+@3:48 - Question: If you could have three wishes, aside from infinite money and infinite wishes, what would they be?
+@9:31 - Completely Useless Facts
+@22:25 - Aesop Rock released a new album...And other entertainment news we don&#039;t follow.
+@28:41 - Sponsor: R. Kelly&#039;s Secret Recipe Smooth Lemonade (It&#039;s horrible, in so many ways)
+@31:45 - &quot;Football teams are kissing queens&quot;?
+@38:24 - Question: If you were to open a market stall at a festival, what would you sell?</description>
+		<content:encoded><![CDATA[<p>Dewitt and Bjorn journey into the world of random facts and super powers. Subscribe via <a href="http://itunes.apple.com/podcast/mmm-yes-quite/id1108243071">iTunes</a>, <a href="https://play.google.com/music/m/I2mlsqqwhimaknebzvhdjpqlnhq?t%3DMmm,_Yes,_Quite">Google </a>and more.</p>
+<h2>Timeline</h2>
+<p>@1:30 &#8211; Bjorn&#8217;s Classroom Misadventures<br />
+@3:48 &#8211; Question: If you could have three wishes, aside from infinite money and infinite wishes, what would they be?<br />
+@9:31 &#8211; Completely Useless Facts<br />
+@22:25 &#8211; Aesop Rock released a new album&#8230;And other entertainment news we don&#8217;t follow.<br />
+@28:41 &#8211; Sponsor: R. Kelly&#8217;s Secret Recipe Smooth Lemonade (It&#8217;s horrible, in so many ways)<br />
+@31:45 &#8211; &#8220;Football teams are kissing queens&#8221;?<br />
+@38:24 &#8211; Question: If you were to open a market stall at a festival, what would you sell?</p>
+]]></content:encoded>
+		<enclosure url="http://mmmyesquite.com/wp-content/uploads/sites/3/2016/05/ep5_audio.m4a" length="22339315" type="audio/x-m4a" />
+		<itunes:subtitle>Bjornhammer and Dewitticus attack a series of random facts and fun topics.</itunes:subtitle>
+		<itunes:summary><![CDATA[Dewitt and Bjorn journey into the world of random facts and super powers. Subscribe via <a href="http://itunes.apple.com/podcast/mmm-yes-quite/id1108243071">iTunes</a>, <a href="https://play.google.com/music/m/I2mlsqqwhimaknebzvhdjpqlnhq?t%3DMmm,_Yes,_Quite">Google </a>and more.<br />
+<br />
+Timeline<br />
+<br />
+@1:30 - Bjorn's Classroom Misadventures<br />
+@3:48 - Question: If you could have three wishes, aside from infinite money and infinite wishes, what would they be?<br />
+@9:31 - Completely Useless Facts<br />
+@22:25 - Aesop Rock released a new album...And other entertainment news we don't follow.<br />
+@28:41 - Sponsor: R. Kelly's Secret Recipe Smooth Lemonade (It's horrible, in so many ways)<br />
+@31:45 - "Football teams are kissing queens"?<br />
+@38:24 - Question: If you were to open a market stall at a festival, what would you sell?]]></itunes:summary>
+		<itunes:author>Mmm, Yes, Quite</itunes:author>
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:duration>45:26</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/F7S4Cei6vbw&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Ep. 4 &#8211; Heat Wave!!! &#8211; MyQ Productions - Mmm, Yes, Quite</title>
+		<link>https://mmmyesquite.com/ep-4-heat-wave/</link>
+		<pubDate>Tue, 26 Apr 2016 17:39:19 +0000</pubDate>
+		<guid isPermaLink="false">http://myq.zerodaedalus.com/2016/04/26/ep-4-heat-wave/</guid>
+		<comments>https://mmmyesquite.com/ep-4-heat-wave/#respond</comments>
+		<wfw:commentRss>https://mmmyesquite.com/ep-4-heat-wave/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<description>Dewitt &amp; Bjorn are back at it again - discussing topics ranging from Dumbledore&#039;s &quot;give no sh*tz&quot; attitude toward child safety to which accounting software is arguably the best! Enjoy and join in on the laughs, puns, and pop culture references all while our hosts slow cook in the sizzling California sun!</description>
+		<content:encoded><![CDATA[<p>Dewitt &amp; Bjorn are back at it again &#8211; discussing topics ranging from Dumbledore&#8217;s &#8220;give no sh*tz&#8221; attitude toward child safety to which accounting software is arguably the best! Enjoy and join in on the laughs, puns, and pop culture references all while our hosts slow cook in the sizzling California sun!</p>
+]]></content:encoded>
+		<enclosure url="http://mmmyesquite.com/wp-content/uploads/sites/3/2016/05/ep4_audio.m4a" length="38563800" type="audio/x-m4a" />
+		<itunes:subtitle>Dewitt &amp; Bjorn are back at it again</itunes:subtitle>
+		<itunes:summary>Dewitt &amp; Bjorn are back at it again - discussing topics ranging from Dumbledore&#039;s &quot;give no sh*tz&quot; attitude toward child safety to which accounting software is arguably the best! Enjoy and join in on the laughs, puns, and pop culture references all while our hosts slow cook in the sizzling California sun!</itunes:summary>
+		<itunes:author>MYQ Productions</itunes:author>
+		<itunes:image href="http://i1.sndcdn.com/artworks-000159984916-dnvl2d-original.jpg" />
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:duration>38:49</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/xMRydZjeyOk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Ep. 3 &#8211; The Nature Family &#8211; MyQ Productions - Mmm, Yes, Quite</title>
+		<link>https://mmmyesquite.com/ep-3-the-nature-family/</link>
+		<pubDate>Tue, 19 Apr 2016 20:46:46 +0000</pubDate>
+		<guid isPermaLink="false">http://myq.zerodaedalus.com/2016/04/19/ep-3-the-nature-family/</guid>
+		<comments>https://mmmyesquite.com/ep-3-the-nature-family/#respond</comments>
+		<wfw:commentRss>https://mmmyesquite.com/ep-3-the-nature-family/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<description>Bjorn &amp; Dewitt enjoy the rainy California weather and discuss topics such as survival and being awesome.</description>
+		<content:encoded><![CDATA[<p>Bjorn &amp; Dewitt enjoy the rainy California weather and discuss topics such as survival and being awesome.</p>
+]]></content:encoded>
+		<enclosure url="http://mq.zerodaedalus.com/wp-content/uploads/sites/3/2016/04/ep3_audio-1.m4a" length="26302615" type="audio/x-m4a" />
+		<itunes:subtitle>Today, we discuss some random stuff.</itunes:subtitle>
+		<itunes:summary><![CDATA[Bjorn &amp; Dewitt enjoy the rainy California weather and discuss topics such as survival and being awesome.]]></itunes:summary>
+		<itunes:author>MYQ Productions</itunes:author>
+		<itunes:image href="http://i1.sndcdn.com/artworks-000158935737-lsl7b1-original.jpg" />
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:duration>27:00</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/y5PX1T00oeE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Ep. 2 &#8211; Donuts make us go nuts &#8211; MyQ Productions - Mmm, Yes, Quite</title>
+		<link>https://mmmyesquite.com/ep-2-donuts-make-us-go-nuts/</link>
+		<pubDate>Tue, 12 Apr 2016 06:24:15 +0000</pubDate>
+		<guid isPermaLink="false">http://myq.zerodaedalus.com/2016/04/12/ep-2-donuts-make-us-go-nuts/</guid>
+		<comments>https://mmmyesquite.com/ep-2-donuts-make-us-go-nuts/#respond</comments>
+		<wfw:commentRss>https://mmmyesquite.com/ep-2-donuts-make-us-go-nuts/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<description>Today, Bjorn and Dewitt chat about randomness amidst a sudden storm. Will they survive? Tune in to find out!</description>
+		<content:encoded><![CDATA[<p>Today, Bjorn and Dewitt chat about randomness amidst a sudden storm. Will they survive? Tune in to find out!</p>
+]]></content:encoded>
+		<enclosure url="http://mq.zerodaedalus.com/wp-content/uploads/sites/3/2016/04/ep2_audio-1.m4a" length="28678374" type="audio/x-m4a" />
+		<itunes:subtitle>Today, Bjorn and Dewitt chat about randomness</itunes:subtitle>
+		<itunes:summary>Today, Bjorn and Dewitt chat about randomness amidst a sudden storm. Will they survive? Tune in to find out!</itunes:summary>
+		<itunes:author>MYQ Productions</itunes:author>
+		<itunes:image href="http://i1.sndcdn.com/artworks-000157677093-ip9ft5-original.jpg" />
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:duration>29:26</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sPSmCorPZ20&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Ep. 1 &#8211; Work, work, work, work, work &#8211; MyQ Productions - Mmm, Yes, Quite</title>
+		<link>https://mmmyesquite.com/ep-1-work-work-work-work-work/</link>
+		<pubDate>Sun, 10 Apr 2016 15:23:30 +0000</pubDate>
+		<guid isPermaLink="false">http://myq.zerodaedalus.com/2016/04/10/ep-1-work-work-work-work-work/</guid>
+		<comments>https://mmmyesquite.com/ep-1-work-work-work-work-work/#respond</comments>
+		<wfw:commentRss>https://mmmyesquite.com/ep-1-work-work-work-work-work/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<description>In our inaugural show, Bjorn and Dewitt highlight the keys of work...and butcher Rihanna&#039;s music.
+
+Join us for lots of goofing around and silliness.</description>
+		<content:encoded><![CDATA[<p>In our inaugural show, Bjorn and Dewitt highlight the keys of work&#8230;and butcher Rihanna&#8217;s music.</p>
+<p>Join us for lots of goofing around and silliness.</p>
+]]></content:encoded>
+		<enclosure url="http://mq.zerodaedalus.com/wp-content/uploads/sites/3/2016/04/ep1_audio-1.m4a" length="37295870" type="audio/x-m4a" />
+		<itunes:subtitle>In our inaugural show, Bjorn and Dewitt highlight the keys of work...and butcher Rihanna&#039;s music.  Join us for lots of goofing around and silliness.</itunes:subtitle>
+		<itunes:summary><![CDATA[In our inaugural show, Bjorn and Dewitt highlight the keys of work...and butcher Rihanna's music.<br />
+<br />
+Join us for lots of goofing around and silliness.]]></itunes:summary>
+		<itunes:author>Mmm, Yes, Quite</itunes:author>
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:duration>28:00</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/bGAgxVi2o5I&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+</channel>
+</rss>

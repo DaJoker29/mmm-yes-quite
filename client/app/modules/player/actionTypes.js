@@ -1,2 +1,10 @@
 export const REQUEST = 'player/REQUEST';
 export const RECEIVE = 'player/RECEIVE';
+export const LOAD = 'player/LOAD';
+export const PLAY = 'player/PLAY';
+export const PAUSE = 'player/PAUSE';
+export const TOGGLE_PLAYING = 'player/TOGGLE_PLAYING';
+export const SET_ELAPSED = 'player/SET_ELAPSED';
+export const SET_TIME = 'player/SET_TIME';
+export const CLEAR_SEEKING = 'player/CLEAR_SEEKING';
+export const SKIP_NEXT = 'player/SKIP_NEXT';
