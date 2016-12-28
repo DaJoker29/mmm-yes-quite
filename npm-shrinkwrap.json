@@ -1,6 +1,6 @@
 {
   "name": "mmm-yes-quite",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",
