@@ -69,6 +69,7 @@ export function togglePlaying() {
     if ('playing' === getStatus(getState())) {
       dispatch(audioPause(NAME));
       dispatch(pause());
+      return;
     }
     dispatch(audioPlay(NAME));
     dispatch(play());
