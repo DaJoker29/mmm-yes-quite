@@ -32,10 +32,6 @@ function playerReducer(state = initialState, action) {
       return Object.assign({}, state, {
         seeking: '',
       });
-    case t.SKIP_NEXT:
-      return Object.assign({}, state, {
-        current: state.playlist[state.current + 1] ? state.current + 1 : state.current,
-      });
     default:
       return state;
   }

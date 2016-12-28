@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Audio } from 'redux-audio';
-import { getCurrentTrack, getNextTrack, getElapsedTime, getStatus, getSeeking } from '../selectors';
-import { loadPlayer, togglePlaying, setElapsed, seekTo, clearSeeking, skipNext } from '../actions';
+import { getCurrentTrack, getElapsedTime, getStatus, getSeeking } from '../selectors';
+import { loadPlayer, togglePlaying, setElapsed, seekTo, clearSeeking, setTime } from '../actions';
 import AudioElement from './AudioElement';
 import AudioProgress from './AudioProgress';
 import { NAME } from '../constants';
@@ -10,17 +10,16 @@ import { NAME } from '../constants';
 class AudioPlayer extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(loadPlayer());
     this.timer = setInterval(() => {
       const audioObj = this.audio.querySelector('audio');
       if ('number' === typeof this.props.seeking) {
-        audioObj.currentTime = Math.floor(this.props.seeking);
+        audioObj.currentTime = Math.round(this.props.seeking);
         dispatch(clearSeeking());
       } else if (this.props.isPlaying) {
         const elapsed = audioObj.currentTime;
-        dispatch(setElapsed(Math.floor(elapsed)));
+        dispatch(setElapsed(Math.round(elapsed)));
       }
-    }, 1000);
+    }, 200);
   }
 
   componentWillUnmount() {
@@ -28,18 +27,21 @@ class AudioPlayer extends Component {
   }
 
   render() {
-    const { currentTrack, nextTrack, elapsed, togglePlay, isPlaying, seekTo, skipNext } = this.props;
+    const { currentTrack, elapsed, togglePlay, isPlaying, seekTo, seekForward, seekBackward } = this.props;
     return (
       <div id="audio-player" ref={(audio) => { this.audio = audio; }} class="audio-player navbar navbar-dark bg-faded navbar-fixed-bottom">
         <div class="container-fluid">
-          <Audio uniqueId={NAME} />
+          <Audio 
+            preload="auto" 
+            uniqueId={NAME} 
+          />
           <AudioElement
             currentTrack={currentTrack} 
-            nextTrack={nextTrack}
             elapsed={elapsed} 
             togglePlay={togglePlay}
-            skipNext={skipNext}
-            isPlaying={isPlaying} 
+            isPlaying={isPlaying}
+            seekForward={seekForward}
+            seekBackward={seekBackward}
           />
         </div>
         <AudioProgress onChange={seekTo} elapsed={elapsed} length={currentTrack ? currentTrack.length : 0} />
@@ -50,19 +52,18 @@ class AudioPlayer extends Component {
 
 AudioPlayer.propTypes = {
   currentTrack: PropTypes.any,
-  nextTrack: PropTypes.any,
   dispatch: PropTypes.func,
   elapsed: PropTypes.number,
   togglePlay: PropTypes.func,
   seekTo: PropTypes.func,
-  skipNext: PropTypes.func,
+  seekForward: PropTypes.func,
+  seekBackward: PropTypes.func,
   isPlaying: PropTypes.bool,
   seeking: PropTypes.any,
 };
 
 const mapStateToProps = state => ({
   currentTrack: getCurrentTrack(state),
-  nextTrack: getNextTrack(state),
   elapsed: getElapsedTime(state),
   isPlaying: 'playing' === getStatus(state),
   seeking: getSeeking(state),
@@ -70,13 +71,17 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   togglePlay: () => {
+    dispatch(loadPlayer());
     dispatch(togglePlaying());
-  },
-  skipNext: () => {
-    dispatch(skipNext());
   },
   seekTo: (seek) => {
     dispatch(seekTo(seek));
+  },
+  seekForward: (elapsed) => {
+    dispatch(setTime(elapsed + 15));
+  },
+  seekBackward: (elapsed) => {
+    dispatch(setTime(elapsed - 15));
   },
   dispatch,
 });

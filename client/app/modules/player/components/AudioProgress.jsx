@@ -10,7 +10,7 @@ const AudioProgress = ({ onChange, elapsed, length }) => (
     }
     type="range" 
     id="audio-timeline" 
-    class="mt-1 mb-0 audio-timeline progress progress-success" 
+    class="my-0 audio-timeline progress progress-success" 
     value={`${100 / (length / elapsed)}`} 
     max="100" 
   />

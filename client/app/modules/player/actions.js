@@ -2,8 +2,8 @@
 import { audioPlay, audioPause, audioSrc } from 'redux-audio/actions';
 import * as t from './actionTypes';
 import dummyPlaylist from './dummy';
-import { NAME } from './constants';
 import { getCurrentTrack, getStatus } from './selectors';
+import { NAME } from './constants';
 
 /**
  * Actions
@@ -44,14 +44,14 @@ export const pause = () => ({
   type: t.PAUSE,
 });
 
-
 /**
  * Action Creators
  */
 
 export function loadPlayer() {
   return (dispatch, getState) => {
-    dispatch(audioSrc(NAME, getCurrentTrack(getState()).media));
+    const { media } = getCurrentTrack(getState());
+    dispatch(audioSrc(NAME, media));
     dispatch(load());
   };
 }
