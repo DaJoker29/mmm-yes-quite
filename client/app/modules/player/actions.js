@@ -5,49 +5,36 @@ import dummyPlaylist from './dummy';
 import { NAME } from './constants';
 import { getCurrentTrack, getStatus } from './selectors';
 
-export function requestPlaylist() {
-  return {
-    type: t.REQUEST,
-  };
-}
+/**
+ * Actions
+ */
 
-export function receivePlaylist(playlist) {
-  return {
-    type: t.RECEIVE,
-    playlist,
-  };
-}
+export const requestPlaylist = () => ({
+  type: t.REQUEST,
+});
 
-export function setElapsed(elapsed) {
-  return {
-    type: t.SET_ELAPSED,
-    elapsed,
-  };
-}
+export const receivePlaylist = playlist => ({
+  type: t.RECEIVE,
+  playlist,
+});
+
+export const setElapsed = elapsed => ({
+  type: t.SET_ELAPSED,
+  elapsed,
+});
 
 export const load = () => ({
   type: t.LOAD,
 });
 
-export function loadPlayer() {
-  return (dispatch, getState) => {
-    dispatch(audioSrc(NAME, getCurrentTrack(getState()).media));
-    dispatch(load());
-  };
-}
+export const setTime = time => ({
+  type: t.SET_TIME,
+  time,
+});
 
-export function setTime(time) {
-  return {
-    type: t.SET_TIME,
-    time,
-  };
-}
-
-export function clearSeeking() {
-  return {
-    type: t.CLEAR_SEEKING,
-  };
-}
+export const clearSeeking = () => ({
+  type: t.CLEAR_SEEKING,
+});
 
 export const play = () => ({
   type: t.PLAY,
@@ -57,11 +44,16 @@ export const pause = () => ({
   type: t.PAUSE,
 });
 
-function calculateTime(seekPoint, state) {
-  const { player } = state;
-  const { current, playlist } = player;
-  const totalLength = playlist[current].length;
-  return (seekPoint / 100) * totalLength;
+
+/**
+ * Action Creators
+ */
+
+export function loadPlayer() {
+  return (dispatch, getState) => {
+    dispatch(audioSrc(NAME, getCurrentTrack(getState()).media));
+    dispatch(load());
+  };
 }
 
 export function seekTo(seekPoint) {
@@ -76,17 +68,30 @@ export function togglePlaying() {
   return (dispatch, getState) => {
     if ('playing' === getStatus(getState())) {
       dispatch(audioPause(NAME));
-      return dispatch(pause());
+      dispatch(pause());
     }
     dispatch(audioPlay(NAME));
-    return dispatch(play());
+    dispatch(play());
   };
 }
 
-function fetchPlaylist() {
-  return (dispatch) => {
-    dispatch(receivePlaylist(dummyPlaylist));
+export function fetchPlaylistIfNeeded() {
+  return (dispatch, getState) => {
+    if (shouldFetchPlaylist(getState())) {
+      dispatch(receivePlaylist(dummyPlaylist));
+    }
   };
+}
+
+/**
+ * Helpers
+ */
+
+function calculateTime(seekPoint, state) {
+  const { player } = state;
+  const { current, playlist } = player;
+  const totalLength = playlist[current].length;
+  return (seekPoint / 100) * totalLength;
 }
 
 function shouldFetchPlaylist({ player }) {
@@ -95,12 +100,4 @@ function shouldFetchPlaylist({ player }) {
     return true;
   }
   return false;
-}
-
-export function fetchPlaylistIfNeeded() {
-  return (dispatch, getState) => {
-    if (shouldFetchPlaylist(getState())) {
-      return dispatch(fetchPlaylist());
-    }
-  };
 }

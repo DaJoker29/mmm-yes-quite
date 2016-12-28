@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import * as t from './actionTypes';
 import { State as initialState } from './models';
 
@@ -32,6 +31,10 @@ function playerReducer(state = initialState, action) {
     case t.CLEAR_SEEKING:
       return Object.assign({}, state, {
         seeking: '',
+      });
+    case t.SKIP_NEXT:
+      return Object.assign({}, state, {
+        current: state.playlist[state.current + 1] ? state.current + 1 : state.current,
       });
     default:
       return state;

@@ -10,12 +10,12 @@ const playlistLength = playlist => playlist.reduce((a, b) => {
 
 const currentTrack = (state) => {
   const { playlist, current } = state[NAME];
-  return 0 < playlist.length ? playlist[current] : 'N/A';
+  return 0 < playlist.length ? playlist[current] : null;
 };
 
 const nextTrack = (state) => {
   const { playlist, current } = state[NAME];
-  return playlist[current + 1] ? playlist[current + 1] : 'N/A';
+  return playlist[current + 1] ? playlist[current + 1] : null;
 };
 
 export const getPlaylist = state => state[NAME].playlist;

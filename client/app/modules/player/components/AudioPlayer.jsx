@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Audio } from 'redux-audio';
 import { getCurrentTrack, getNextTrack, getElapsedTime, getStatus, getSeeking } from '../selectors';
-import { loadPlayer, togglePlaying, setElapsed, seekTo, clearSeeking } from '../actions';
+import { loadPlayer, togglePlaying, setElapsed, seekTo, clearSeeking, skipNext } from '../actions';
 import AudioElement from './AudioElement';
 import AudioProgress from './AudioProgress';
 import { NAME } from '../constants';
@@ -28,7 +28,7 @@ class AudioPlayer extends Component {
   }
 
   render() {
-    const { currentTrack, nextTrack, elapsed, togglePlay, isPlaying, seekTo } = this.props;
+    const { currentTrack, nextTrack, elapsed, togglePlay, isPlaying, seekTo, skipNext } = this.props;
     return (
       <div id="audio-player" ref={(audio) => { this.audio = audio; }} class="audio-player navbar navbar-dark bg-faded navbar-fixed-bottom">
         <div class="container-fluid">
@@ -37,11 +37,12 @@ class AudioPlayer extends Component {
             currentTrack={currentTrack} 
             nextTrack={nextTrack}
             elapsed={elapsed} 
-            togglePlay={togglePlay} 
+            togglePlay={togglePlay}
+            skipNext={skipNext}
             isPlaying={isPlaying} 
           />
         </div>
-        <AudioProgress onChange={seekTo} elapsed={elapsed} length={currentTrack.length} />
+        <AudioProgress onChange={seekTo} elapsed={elapsed} length={currentTrack ? currentTrack.length : 0} />
       </div>
     );
   }
@@ -54,6 +55,7 @@ AudioPlayer.propTypes = {
   elapsed: PropTypes.number,
   togglePlay: PropTypes.func,
   seekTo: PropTypes.func,
+  skipNext: PropTypes.func,
   isPlaying: PropTypes.bool,
   seeking: PropTypes.any,
 };
@@ -69,6 +71,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   togglePlay: () => {
     dispatch(togglePlaying());
+  },
+  skipNext: () => {
+    dispatch(skipNext());
   },
   seekTo: (seek) => {
     dispatch(seekTo(seek));
